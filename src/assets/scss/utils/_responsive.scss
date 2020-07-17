@@ -1,0 +1,71 @@
+// Mixins
+// Responsiveness
+@mixin from($device) {
+  @media screen and (min-width: $device) {
+    @content;
+  }
+}
+
+@mixin until($device) {
+  @media screen and (max-width: $device - 1px) {
+    @content;
+  }
+}
+
+@mixin mobile-s {
+  @media screen and (max-width: $mobile-m - 1px) {
+    @content;
+  }
+}
+
+@mixin mobile-m {
+  @media screen and (max-width: $mobile-l - 1px) {
+    @content;
+  }
+}
+
+@mixin mobile-l {
+  @media screen and (max-width: $mobile - 1px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: $tablet - 1px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet), print {
+    @content;
+  }
+}
+
+@mixin touch {
+  @media screen and (max-width: $desktop - 1px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin until-widescreen {
+  @if $widescreen-enabled {
+    @media screen and (max-width: $widescreen - 1px) {
+      @content;
+    }
+  }
+}
+
+@mixin widescreen {
+  @if $widescreen-enabled {
+    @media screen and (min-width: $widescreen) {
+      @content;
+    }
+  }
+}

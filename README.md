@@ -1,4 +1,4 @@
-# golz
+# goldwin
 
 ## Project setup
 ```
