@@ -1,30 +1,32 @@
 <template>
-  <div class="home">
-    <div class="profile">
-      <img alt="goldwin_japar" src="@/assets/avatar.jpg" class="profile__avatar-img">
-      <div class="profile__introduction">
-        <h3 class="profile__name">goldwin japar</h3>
-        <p class="profile__about">
-          software development engineer
-          <a href="https://www.blibli.com/" target="_blank">@blibli.com</a>
-        </p>
-        <div class="profile__links">
-          <a href="https://github.com/golz">
-            <font-awesome-icon :icon="['fab', 'github']" />
-          </a>
-          <a href="https://www.linkedin.com/in/goldwin-japar/">
-            <font-awesome-icon :icon="['fab', 'linkedin']" />
-          </a>
-          <a href="https://www.facebook.com/goldwin.japar/">
-            <font-awesome-icon :icon="['fab', 'facebook']" />
-          </a>
-          <a href="mailto:goldwin.japar@gmail.com">
-            <font-awesome-icon icon="envelope" />
-          </a>
+  <transition name="fade">
+    <div class="home" v-show="true">
+      <div class="profile">
+        <img alt="goldwin_japar" src="@/assets/avatar.jpg" class="profile__avatar-img">
+        <div class="profile__introduction">
+          <h3 class="profile__name">goldwin japar</h3>
+          <p class="profile__about">
+            software development engineer
+            <a href="https://www.blibli.com/" target="_blank">@blibli.com</a>
+          </p>
+          <div class="profile__links">
+            <a href="https://github.com/golz">
+              <font-awesome-icon :icon="['fab', 'github']" />
+            </a>
+            <a href="https://www.linkedin.com/in/goldwin-japar/">
+              <font-awesome-icon :icon="['fab', 'linkedin']" />
+            </a>
+            <a href="https://www.facebook.com/goldwin.japar/">
+              <font-awesome-icon :icon="['fab', 'facebook']" />
+            </a>
+            <a href="mailto:goldwin.japar@gmail.com">
+              <font-awesome-icon icon="envelope" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script src="./js/home.js"></script>
