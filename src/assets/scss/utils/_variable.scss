@@ -1,0 +1,130 @@
+// Base colors
+$blue               : #0095da;
+$blue-dark-1        : #004f74;
+$blue-dark          : #0072a7;
+$blue-light         : #0eb3ff;
+$blue-light-1       : #41c3ff;
+$blue-light-2       : #74d3ff;
+$blue-light-3       : #a7e3ff;
+$blue-light-4       : #daf3ff;
+
+$orange             : #f7931e;
+$orange-dark-1      : #ca7007;
+$orange-dark        : #f37021;
+$orange-light       : #f8a33f;
+$orange-light-1     : #f9b260;
+$orange-light-2     : #fac280;
+$orange-light-3     : #fcd2a1;
+$orange-light-4     : #fde2c2;
+
+$green              : #00b25a;
+$green-dark-1       : #004c26;
+$green-dark         : #007f40;
+$green-light        : #00e574;
+$green-light-1      : #19ff8d;
+$green-light-2      : #4cffa6;
+$green-light-3      : #7fffc0;
+$green-light-4      : #b2ffd9;
+
+$red                : #ed1c24;
+$red-dark-1         : #970c11;
+$red-dark           : #c61017;
+$red-light          : #ef3b42;
+$red-light-1        : #f25b61;
+$red-light-2        : #f47a7f;
+$red-light-3        : #f79a9d;
+$red-light-4        : #f9b9bc;
+
+$magenta            : #ec008c;
+$magenta-dark-1     : #860050;
+$magenta-dark       : #b9006e;
+$magenta-light      : #ff0f9d;
+$magenta-light-1    : #ff31ab;
+$magenta-light-2    : #ff53b9;
+$magenta-light-3    : #ff75c7;
+$magenta-light-4    : #ff97d5;
+
+$lime               : #8bc63f;
+$lime-dark-1        : #557b24;
+$lime-dark          : #70a230;
+$lime-light         : #9bce59;
+$lime-light-1       : #abd673;
+$lime-light-2       : #badd8e;
+$lime-light-3       : #cae5a8;
+$lime-light-4       : #daedc2;
+
+// Monochromatic
+// Gray scale
+$black              : #000000;
+$white              : #ffffff;
+
+$gray               : #5c5c5c;
+$gray-dark          : #333333;
+$gray-light         : #858585;
+$gray-light-1       : #bdbdbd;
+$gray-light-2       : #d6d6d6;
+$gray-light-3       : #e0e0e0;
+$gray-light-4       : #f1f1f1;
+
+// Primary color
+$color-info           : $blue-light;
+$color-info-light     : $blue-light-4;
+$color-success        : $lime-light;
+$color-success-light  : $lime-light-4;
+$color-warning        : $orange-light;
+$color-warning-light  : $orange-light-4;
+$color-danger         : $red-light;
+$color-danger-light   : $red-light-4;
+$color-error          : $red;
+$color-link           : $blue;
+
+$color-primary        : $orange-dark !default;
+$color-secondary      : $blue !default;
+
+//Globals
+$line-height    : 2.4rem !default;
+$global-radius  : 8px !default;
+$border-color   : $gray-light-2 !default;
+
+// Font variables
+$font-sans-serif  : "effra", Helvetica, Arial, sans-serif !default;
+$font-serif       : "Merriweather", Georgia, "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-monospace   : Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-base        : $font-sans-serif;
+$font-color       : rgba(0, 0, 0, 0.87) !default;
+$font-color-1     : rgba(0, 0, 0, 0.6) !default;
+$font-color-2     : rgba(0, 0, 0, 0.38) !default;
+$font-color-invert       : rgba(255, 255, 255, 0.87) !default;
+$font-color-1-invert     : rgba(255, 255, 255, 0.6) !default;
+$font-color-2-invert     : rgba(255, 255, 255, 0.38) !default;
+
+$font-size        : 16px !default;
+$font-size-large  : $font-size * 1.25;  // 20px
+$font-size-medium : $font-size * 0.875; // 14px
+$font-size-small  : $font-size * 0.75;  // 12px
+$font-size-micro  : $font-size * 0.625; // 10px
+
+// Icon
+$icon-large: 28px;
+$icon-medium: 26px;
+$icon-small: 16px;
+
+// Shadow
+$shadow   : 0 0 24px -4px rgba(0, 0, 0, 0.12);
+
+// Size for Checkbox, Radio button and Switch ball
+$check-size: 18px;
+$check-push: 10px;
+
+$gap: 32px !default;
+
+$mobile-s: 321px !default;
+$mobile-m: 376px !default;
+$mobile-l: 426px !default;
+$mobile  : 540px !default;
+
+$tablet: 769px !default;
+$desktop: 960px + (2 * $gap) !default;
+$widescreen: 1200px + (2 * $gap) !default;
+$widescreen-enabled: true !default;
