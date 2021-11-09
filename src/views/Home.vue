@@ -1,7 +1,7 @@
 <template>
   <div>
     <transition name="fade">
-      <div class="home" v-show="true">
+      <div class="home">
         <div class="divider"></div>
         <div class="profile">
           <img alt="goldwin_japar" src="@/assets/avatar.jpg" class="profile__avatar-img">
@@ -20,6 +20,9 @@
               </a>
               <a href="https://www.facebook.com/goldwin.japar/">
                 <font-awesome-icon :icon="['fab', 'facebook']"/>
+              </a>
+              <a href="https://www.twitch.tv/goldwintv/">
+                <font-awesome-icon :icon="['fab', 'twitch']"/>
               </a>
               <a href="mailto:goldwin.japar@gmail.com">
                 <font-awesome-icon icon="envelope"/>
